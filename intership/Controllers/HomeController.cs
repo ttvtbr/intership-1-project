@@ -25,6 +25,7 @@ namespace intership.Controllers
 
         public IActionResult About()
         {
+            ViewData["Message"] = "This is the About page. Here you can find more information about our application and team.";
             return View();
         }
 
