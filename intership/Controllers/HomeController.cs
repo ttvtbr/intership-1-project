@@ -7,6 +7,7 @@ namespace intership.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private static int _visitorCount = 0;
 
         public HomeController(ILogger<HomeController> logger)
         {
@@ -27,6 +28,12 @@ namespace intership.Controllers
         {
             ViewData["Message"] = "This is the About page. Here you can find more information about our application and team.";
             return View();
+        }
+
+        public IActionResult VisitorCount()
+        {
+            _visitorCount++;
+            return Json(new { count = _visitorCount });
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
