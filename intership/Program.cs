@@ -1,3 +1,9 @@
+using FluentValidation.AspNetCore;
+using intership.Data;
+using intership.Services;
+using intership.Mapping;
+using FluentValidation;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

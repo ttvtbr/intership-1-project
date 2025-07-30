@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "About";
+}
+
+<h2>@ViewData["Title"]</h2>
+<p>@ViewData["Message"]</p>
+
+<button id="helloBtn" type="button">Say Hello</button>
+
+<script>
+    document.getElementById('helloBtn').addEventListener('click', function() {
+        alert('Hello there');
+    });
+</script>

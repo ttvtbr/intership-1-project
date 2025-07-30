@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YOUSEF\\Source\\Repos\\intership-1-project\\intership\\intership.csproj": {}
+    "C:\\Users\\YOUSEF\\source\\repos\\intership-1-project\\intership\\intership.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YOUSEF\\Source\\Repos\\intership-1-project\\intership\\intership.csproj": {
+    "C:\\Users\\YOUSEF\\source\\repos\\intership-1-project\\intership\\intership.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YOUSEF\\Source\\Repos\\intership-1-project\\intership\\intership.csproj",
+        "projectUniqueName": "C:\\Users\\YOUSEF\\source\\repos\\intership-1-project\\intership\\intership.csproj",
         "projectName": "intership",
-        "projectPath": "C:\\Users\\YOUSEF\\Source\\Repos\\intership-1-project\\intership\\intership.csproj",
+        "projectPath": "C:\\Users\\YOUSEF\\source\\repos\\intership-1-project\\intership\\intership.csproj",
         "packagesPath": "C:\\Users\\YOUSEF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YOUSEF\\Source\\Repos\\intership-1-project\\intership\\obj\\",
+        "outputPath": "C:\\Users\\YOUSEF\\source\\repos\\intership-1-project\\intership\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

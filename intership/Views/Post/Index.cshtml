@@ -1,0 +1,26 @@
+
+@model IEnumerable<intership.Models.Post>
+
+<h2>Posts</h2>
+
+<a href="/Post/Create">Create New Post</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var post in Model)
+        {
+            <tr>
+                <td>@post.Title</td>
+                <td>@post.Content</td>
+                <td>@post.CreatedAt.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>
