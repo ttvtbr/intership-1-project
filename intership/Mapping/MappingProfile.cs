@@ -10,7 +10,6 @@ namespace intership.Mapping
         public MappingProfile()
         {
             CreateMap<Post, PostDto>().ReverseMap();
-            CreateMap<Comment, CommentDto>().ReverseMap();
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("intership")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+575c27876cdf54692397654621a4d8f2bfc0c502")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b112f6691a2083796224e18bc074246ef3827a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("intership")]
 [assembly: System.Reflection.AssemblyTitleAttribute("intership")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
