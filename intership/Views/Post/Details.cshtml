@@ -1,0 +1,39 @@
+
+@model intership.Models.Post
+@{
+    ViewData["Title"] = "Post Details";
+}
+<h2>@Model.Title</h2>
+<p><strong>By:</strong> @Model.AuthorName • @Model.CreatedAt.ToLocalTime()</p>
+<p>@Model.Content</p>
+
+<form asp-controller="Like" asp-action="Toggle" method="post" class="mb-3">
+    <input type="hidden" name="postId" value="@Model.Id" />
+    <input type="hidden" name="userName" value="Anon" />
+    <button type="submit" class="btn btn-outline-primary">Like (@(Model.Likes?.Count ?? 0))</button>
+</form>
+
+<h4>Comments (@(Model.Comments?.Count ?? 0))</h4>
+<ul class="list-unstyled">
+@foreach (var c in Model.Comments ?? new List<intership.Models.Comment>())
+{
+    <li class="mb-2">
+        <strong>@c.UserName:</strong> @c.Content
+        <div class="text-muted" style="font-size:12px">@c.CreatedAt.ToLocalTime()</div>
+    </li>
+}
+</ul>
+
+<h5>Add a comment</h5>
+<form asp-controller="Comment" asp-action="Create" method="post">
+    <input type="hidden" name="PostId" value="@Model.Id" />
+    <div class="form-group">
+        <label for="UserName">Name</label>
+        <input class="form-control" name="UserName" />
+    </div>
+    <div class="form-group">
+        <label for="Content">Comment</label>
+        <textarea class="form-control" name="Content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>

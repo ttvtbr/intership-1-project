@@ -8,13 +8,9 @@ namespace intership.Validators
     {
         public PostValidator()
         {
-            RuleFor(x => x.Title)
-                .NotEmpty().WithMessage("Title is required")
-                .MaximumLength(200);
-
-            RuleFor(x => x.Content)
-                .NotEmpty().WithMessage("Content is required")
-                .MaximumLength(1000);
+            RuleFor(x => x.Title).NotEmpty().MaximumLength(150);
+            RuleFor(x => x.Content).NotEmpty().MaximumLength(1000);
+            RuleFor(x => x.AuthorName).MaximumLength(80);
         }
     }
 }

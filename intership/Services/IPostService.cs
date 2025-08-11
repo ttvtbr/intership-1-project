@@ -9,6 +9,6 @@ namespace intership.Services
     {
         Task<IEnumerable<Post>> GetAllAsync();
         Task<Post> GetByIdAsync(int id);
-        Task CreateAsync(Post post);
+        Task<Post> CreateAsync(Post post);
     }
 }
